@@ -1,0 +1,56 @@
+/* Basic page setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* The grid container */
+#grid-container {
+    display: grid;
+    /* We will set the grid columns/rows with JavaScript */
+    border: 2px solid #333;
+    width: 800px; /* Adjust as needed */
+    height: 600px; /* Adjust as needed */
+    margin: 20px auto;
+    background-color: #fff;
+}
+
+/* This is a single node (a cell) in the grid */
+.grid-node {
+    /* Each node will have a border to create the grid lines */
+    border: 1px solid #ddd;
+    /* This makes the border part of the node's size */
+    box-sizing: border-box; 
+}
+
+/* --- Node States --- */
+/* We will add/remove these classes with JavaScript */
+
+.node-start {
+    background-color: #4CAF50; /* Green */
+}
+
+.node-end {
+    background-color: #F44336; /* Red */
+}
+
+.node-wall {
+    background-color: #333; /* Dark Grey */
+    /* Add a little transition */
+    transition: background-color 0.1s ease;
+}
+
+.node-visited {
+    background-color: #add8e6; /* Light Blue */
+}
+
+.node-path {
+    background-color: #ffff00; /* Yellow */
+}
+/* --- Add this to your Node States section --- */
+
+.node-weight {
+    background-color: #9932CC; /* Dark Orchid */
+    transition: background-color 0.1s ease;
+}

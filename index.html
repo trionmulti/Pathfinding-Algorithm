@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pathfinding Visualizer</h1>
+    
+    <div>
+        <button id="bfs-btn">Run BFS</button>
+        <button id="dijkstra-btn">Run Dijkstra</button>
+        <button id="clear-path-btn">Clear Path</button>
+        <button id="clear-board-btn">Clear Board</button>
+    </div>
+    <p>
+        Click to add walls. Hold <strong>'W'</strong> key and click/drag to add weights (cost 10).
+    </p>
+    <div id="grid-container"></div>
+    <script src="app.js"></script>
+</body>
+</html>
